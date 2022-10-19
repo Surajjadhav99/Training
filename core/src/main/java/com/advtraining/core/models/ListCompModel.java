@@ -28,8 +28,6 @@ public class ListCompModel extends SlingSafeMethodsServlet{
     @Optional
     String tagId;
 
-//    RangeIterator<Resource> rangeIterator;//modified line
-
 //    @PostConstruct
 //    public void init(final SlingHttpServletRequest request) throws LoginException {
 //        String tag = tagId;

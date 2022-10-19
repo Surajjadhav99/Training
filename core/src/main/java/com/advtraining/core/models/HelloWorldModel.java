@@ -24,7 +24,7 @@ import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
-import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
@@ -39,11 +39,11 @@ public class HelloWorldModel {
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE, injectionStrategy=InjectionStrategy.OPTIONAL)
     @Default(values="No resourceType")
     protected String resourceType;
-
+//    hello world
     @SlingObject
-    private Resource currentResource;
+    Resource currentResource;
     @SlingObject
-    private ResourceResolver resourceResolver;
+    ResourceResolver resourceResolver;
 
     private String message;
 
