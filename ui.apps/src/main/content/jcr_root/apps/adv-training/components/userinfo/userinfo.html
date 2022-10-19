@@ -1,0 +1,18 @@
+
+<sly data-sly-use.user="com.advtraining.core.models.UserInfo" >
+    <div data-sly-list="${user.userinfo}">
+        ---------------User : ${itemList.count}--------------
+        <p> User Name: <b>${item.username} </b></p>
+        <div data-sly-list.detail="${item.userdetails}">
+            <p> User Id: <b>${detail.userid} </b></p>
+            <p> Email Id : <b>${detail.emailid}</b> </p>
+        </div>
+    </div>
+
+
+
+
+
+</sly>
+
+

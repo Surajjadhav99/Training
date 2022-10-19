@@ -1,0 +1,13 @@
+<h1>Sling Model Component</h1>
+
+<sly data-sly-use.demo="com.advtraining.core.models.SlingModelDemo">
+        <h1>Active cases:${pageProperties.activeCases}</h1>
+        <p>${demo.data}</p>
+        <sly data-sly-test="${demo.checkbox==true}">
+                <h1>${demo.heading}</h1>
+
+        </sly>
+        <h1><a href="${demo.url}" target="_blank">${demo.slingmodelname}</a></h1>
+
+</sly>
+

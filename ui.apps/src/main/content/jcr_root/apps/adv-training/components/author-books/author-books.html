@@ -1,0 +1,20 @@
+
+<sly data-sly-use.books="com.advtraining.core.models.NestedMultifield.AuthorBooks" >
+    <div data-sly-list.item="${books.bookDetailsWithNastedMultifield}">
+        ---------------Book : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Subject : <b>${item.bookSubject} </b></p>
+        <div data-sly-list.editon="${item.bookEditons}">
+            <p> Book Editon : <b>${editon.bookEditon} </b></p>
+            <p> Published Date : <b>${'MMM dd,yyyy' @ format=editon.editonDate}</b> </p>
+        </div>
+    </div>
+    <p>ALL Books:<b>${books.bookDetailsWithNastedMultifield @ join=','}</b></p>
+
+
+
+
+
+</sly>
+
+
